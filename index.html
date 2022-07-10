@@ -24,6 +24,111 @@
       color: white;
     }
   </style>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>JavaScript Fundamentals – Part 1</title>
+      <style>
+        body {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          background: linear-gradient(to top left, #28b487, #7dd56f);
+        }
+        h1 {
+          font-family: sans-serif;
+          font-size: 50px;
+          line-height: 1.3;
+          width: 100%;
+          padding: 30px;
+          text-align: center;
+          color: white;
+        }
+      </style>
+  
+      <script>
+  //challenge 1//
+  let MarksWeight = 95
+  let JohnsWeight = 85
+  let MarksHeight =1.88
+  let JohnsHeight = 1.76
+  
+  let MarksBMI = MarksWeight / MarksHeight **2
+  console.log (MarksBMI)
+  let JohnsBMI = JohnsWeight / (JohnsHeight * JohnsHeight)
+  console.log (JohnsBMI)
+  let markHigherBMI = MarksBMI > JohnsBMI
+  console.log (markHigherBMI)
+  
+  //challenge 2//
+  
+  if (MarksBMI>JohnsBMI) 
+  console.log (`Mark has a higher BMI ${MarksBMI}`)
+  else (JohnsBMI>MarksBMI) 
+  console.log (`John has a higher BMI ${JohnsBMI} `)
+  
+  //challenge 3  Data 1: Dolphins score  97, 112 and 101. Koalas score 109, 95 and 106//
+  
+  const Dolphinsscore = 97 + 112 + 101 
+  const Koalasscore = 109 +95 +123
+  
+  const DolphinsAverageScore = Dolphinsscore/ 3
+  const KoalasAverageScore = Koalasscore/3
+  const ScoreAtLeast = 100
+  const SameAveageScore = DolphinsAverageScore===KoalasAverageScore
+  const BothOver100 = DolphinsAverageScore && KoalasAverageScore >= ScoreAtLeast
+  
+  if (SameAveageScore &&  BothOver100)
+   { console.log ('Both win!')}
+   else {
+     console.log ('No one Wins!')}
+  
+     const day = 'Monday'
+     switch (day) {
+      case 'Monday':
+         console.log ('Wash the plates')
+         break;
+        case 'Tuesday':
+           console.log ('Brush your teeth')
+           break;
+           case 'Wednesday':
+             console.log ('Clean the room')
+             break;
+             case 'Thursday':
+             console.log  ('Put a laundry')
+             break;
+             if ('Friday' || 'Saturday')
+            {console.log ('Watch Netflix')} 
+             else  console.log ('See Netflix') 
+                    }
+     
+  //Challenge4 In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+                  
+                    const Bill =40
+                    const Tip1 = (Bill*15)/100
+                    const Tip2= (Bill *20)/100
+                  50<=Bill && Bill<=300 ? console.log(`The Bill was ${Bill} and tip was 15% ${Tip1} and the total value was ${Bill+Tip1}`):
+                  console.log ( `The Bill was ${Bill} and tip was 20% ${Tip2} and the total value was ${Bill+Tip2}`)
+                    
+  
+  
+                    //The bill was 275, the tip was 41.25, and the total value 316.25”
+  
+  
+  
+  
+  
+  
+   </script>
+    </head> 
+  
+    <body>
+      <h1>JavaScript Fundamentals – Part 1</h1>
+  
+      <script src="script.js"></script>
   <script>
 
     let agapi = 'Ugo'
